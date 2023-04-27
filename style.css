@@ -87,8 +87,13 @@
     font-weight: 600;
   }
 
-  .icons a {
-    padding-right: 15px;
+  .social-container {
+    display: flex;
+  }
+
+  .social-container li {
+    padding-right: 20px;
+    list-style: none;
   }
 
   .side-bar li a {
@@ -103,7 +108,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     border-bottom-left-radius: 100px;
-    border: 0.5px solid rgba(247, 241, 241, 0.84);
+    border: 0.5px solid #6070ff9a;
   }
 
   .section-p1 .div1 {
@@ -124,15 +129,16 @@
     margin: 1px;
   }
 
-  .section-p1 .icons {
+  .section-p1 .div2 {
     width: 90%;
     margin: auto;
   }
 
-  .icons p {
+  .div2 p {
     text-transform: uppercase;
     color: #7f8cff;
     padding-bottom: 15px;
     padding-top: 15px;
+    font-weight: 500;
   }
 }
