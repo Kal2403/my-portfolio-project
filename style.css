@@ -13,24 +13,29 @@
     justify-content: space-around;
     align-items: center;
   }
+
   .logo a {
     text-decoration: none;
     color: #6070ff;
     font-size: 1em;
   }
+
   .logo span {
     color: #000;
   }
+
   .nav {
     --i1: scale(1);
     --i2: scale(0);
   }
+
   .nav:has(.side-bar:target) {
     --i1: scale(0);
     --i2: scale(1);
 
     --clip: inset(0 0 0 0);
   }
+
   .nav-container {
     width: 90%;
     margin: 0 auto;
@@ -41,6 +46,7 @@
     align-items: center;
     overflow: hidden;
   }
+
   .nav-menu {
     grid-area: i;
     position: relative;
@@ -54,10 +60,12 @@
     transform: var(--i2);
     color: #fff;
   }
+
   .nav-icon {
     width: 30%;
     display: block;
   }
+
   .side-bar {
     position: absolute;
     width: 100%;
@@ -71,6 +79,7 @@
     clip-path: var(--clip, inset(0 0 100% 100%));
     transition: clip-path 0.5s;
   }
+
   .side-bar li {
     list-style: none;
     padding-top: 20px;
@@ -78,10 +87,16 @@
     font-size: 32px;
     font-weight: 600;
   }
+  
+  .icons a {
+    padding-right: 15px;
+  }
+
   .side-bar li a {
     color: #fff;
     text-decoration: none;
   }
+
   .section-p1 {
     width: 100%;
     height: 94vh;
@@ -91,32 +106,34 @@
     border-bottom-left-radius: 100px;
     border: 0.5px solid rgba(247, 241, 241, 0.84);
   }
+
   .section-p1 .div1 {
     width: 90%;
     margin: auto;
     padding-top: 120px;
   }
+
   .div1 h2 {
     font-size: 2.8em;
     font-weight: 700;
     line-height: 50px;
   }
+
   .div1 p {
     padding-top: 10px;
     font-size: 16px;
     margin: 1px;
   }
+
   .section-p1 .icons {
     width: 90%;
     margin: auto;
   }
+
   .icons p {
     text-transform: uppercase;
     color: #7f8cff;
     padding-bottom: 15px;
     padding-top: 15px;
-  }
-  .icons a {
-    padding-right: 15px;
   }
 }
