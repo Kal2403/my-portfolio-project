@@ -32,7 +32,6 @@
   .nav:has(.side-bar:target) {
     --i1: scale(0);
     --i2: scale(1);
-
     --clip: inset(0 0 0 0);
   }
 
@@ -87,7 +86,7 @@
     font-size: 32px;
     font-weight: 600;
   }
-  
+
   .icons a {
     padding-right: 15px;
   }
