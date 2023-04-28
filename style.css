@@ -104,7 +104,7 @@
   }
 
   main {
-    background-color: #e5e5e593;
+    background-color: #E5E5E5;
   }
 
   .section-p1 {
@@ -135,12 +135,7 @@
     margin: 1px;
   }
 
-  .section-p1 .div2 {
-    width: 90%;
-    margin: auto;
-  }
-
-  .div2 p {
+  .connect {
     text-transform: uppercase;
     color: #7f8cff;
     padding-bottom: 15px;
@@ -148,46 +143,46 @@
     font-weight: 500;
   }
 
-  .section-p2 {
-    width: 100%;
-    height: 2788px;
-    padding-top: 114px;
+  .section-p1 .div2 {
+    width: 90%;
+    margin: auto;
   }
 
-  .cards-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-row-gap: 88px;
+  .section-p2 {
     width: 90%;
+    height: 2788px;
+    padding-top: 114px;
+    display: grid;
     margin: auto;
   }
 
   .card {
     border: 1px solid rgba(235, 235, 255, 1);
-    width: 100%;
+    width: 90%;
     height: 552px;
-    margin: auto;
     border-radius: 16px;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
   }
 
   .card .img-project {
-    position: relative;
-    left: 16px;
-    top: 16px;
+    width: 90%;
+    margin: auto;
   }
 
   .card .description-project {
+    display: flex;
+    flex-direction: column;
     width: 90%;
     margin: auto;
-    padding-top: 12px;
+    padding-bottom: 30px;
   }
 
   .description-project h3 {
     font-size: 32px;
     width: 90%;
-    padding-top: 10px;
   }
 
   .frame {
@@ -219,7 +214,7 @@
   .list-technologys li {
     list-style: none;
     font-weight: 500;
-    padding: 4px 12px 4px 12px;
+    padding: 4px 12px 4px 0;
   }
 
   .list-technologys li a {
@@ -243,6 +238,16 @@
     background-color: #fff;
   }
 
+  .description-project button:hover {
+    background-color: #6070ff;
+    color: #fff;
+  }
+
+  .description-project button:active {
+    background-color: #2230D2;
+    color: #fff;
+  }
+
   .tonic h3 {
     line-height: 65px;
   }
@@ -256,12 +261,14 @@
     height: 1062px;
     background: #fff;
     border-top-right-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
-  .about-me {
-    width: 90%;
-    margin: auto;
-    padding-top: 114px;
+  .description1 {
+    width: 327px;
   }
 
   .description1 h2 {
@@ -278,49 +285,54 @@
     color: #396df2;
     border-color: #6070ff;
     background-color: #fff;
+    position: relative;
+    right: 30px;
   }
 
-  .list-tech li {
-    width: 100%;
-    list-style: none;
+  .description2 button:hover {
+    background-color: #6070ff;
+    color: #fff;
+  }
+
+  .description2 button:active {
+    background-color: #2230D2;
+    color: #fff;
+  }
+
+  .social-container2 {
     display: flex;
-    justify-content: start;
-    align-items: center;
-    margin: 10px 10px 10px 0;
-    padding: 5px 0 5px 5px;
-    border-radius: 8px;
-    background: rgba(247, 247, 249, 1);
+    justify-content: center;
+    position: relative;
+    right: 30px;
   }
 
-  .description2 .social-container li {
-    padding-top: 20px;
-    padding-left: 5px;
+  .social-container2 li {
+    list-style: none;
+    padding-right: 35px;
   }
 
   .name-drop {
     width: 85%;
     margin: auto;
     display: flex;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .name-drop li {
+    list-style: none;
+    margin-top: 50px;
+    padding-left: 10px;
+    border-radius: 8px;
+  }
+
+  .name-drop li a {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
-    font-weight: 500;
-    font-size: 20px;
-  }
-
-  .list-tech {
-    width: 85%;
-    margin: auto;
-  }
-
-  .list-tech li a {
-    padding-left: 10px;
+    cursor: pointer;
     text-decoration: none;
-    color: #000;
     font-weight: 500;
-  }
-
-  br {
-    width: 80%;
+    color: #000;
   }
 }
