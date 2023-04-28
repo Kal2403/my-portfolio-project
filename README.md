@@ -87,9 +87,11 @@ Install this project with:
 
 ### Usage
 
-Once you have opened the `index.html` file in your browser, you should see two section's.
-- First one is the header with logo and a menu bar to desplay. You will see portfolio, about me and contact.
-- Second you will the section main who has the content of me and icons from my personal social medias.
+Once you have opened the `index.html` file in your browser, you should see My-Portafolio-project:
+  - You will see three sections in main.
+  - Header for my logo en a menu bar who has the direction to my sections.
+  - A section of my projects.
+  - A section about me.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
