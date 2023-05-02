@@ -198,10 +198,10 @@
         I'd love to help with it!</p>
       </div>
       <form id="myform" action="https://formspree.io/f/{form_id}" method="post">
-        <input type="text" maxlength="30" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
-        <textarea name="comments" id="textarea" cols="30" rows="10" maxlength="500" placeholder="Write your message here..." required></textarea>
-        <button type="submit">Get in touch</button>
+        <input name="name" type="text" maxlength="30" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="comments" type="text" id="textarea" cols="30" rows="10" maxlength="500" placeholder="Write your message here..." required></textarea>
+        <button name="btn" type="submit">Get in touch</button>
       </form>
       <img src="/img/Shape.svg">
     </section>
