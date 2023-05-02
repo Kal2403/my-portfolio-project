@@ -88,10 +88,11 @@ Install this project with:
 ### Usage
 
 Once you have opened the `index.html` file in your browser, you should see My-Portafolio-project:
-  - You will see three sections in main.
-  - Header for my logo en a menu bar who has the direction to my sections.
-  - A section of my projects.
-  - A section about me.
+    1. **Home**: The main section of the site, containing information about me and a summary of my skills and experience.
+    2. **My Projects**: This section showcases some of my most recent and relevant projects.
+    3. **About Me**: This section provides more detailed information about me and my professional background and experience.
+    4. **Contact**: This section includes contact information for reaching out to me.
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
