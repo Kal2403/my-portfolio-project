@@ -92,6 +92,7 @@ Once you have opened the `index.html` file in your browser, you should see My-Po
   - Header for my logo en a menu bar who has the direction to my sections.
   - A section of my projects.
   - A section about me.
+  - A section Contact.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
