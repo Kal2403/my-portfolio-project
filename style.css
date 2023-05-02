@@ -194,6 +194,11 @@
     padding-top: 5px;
   }
 
+  .text-contain p {
+    font-size: 20px;
+    margin: 0 28px 28px 28px;
+  }
+
   .frame p:nth-child(3) {
     color: #7a869a;
   }
@@ -361,11 +366,6 @@
     font-size: 40px;
   }
 
-  .text-contain p {
-    font-size: 20px;
-    margin: 0 28px 28px 28px;
-  }
-
   #myform {
     width: 85%;
     height: 52vh;
@@ -402,7 +402,6 @@
     border-radius: 8px;
     border-color: #6070ff;
     font-size: 17px;
-    
   }
 
   #myform button:enabled {
