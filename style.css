@@ -104,7 +104,7 @@
   }
 
   main {
-    background-color: #e5e5e5;
+    background-color: #fff6f6b7;
   }
 
   .section-p1 {
@@ -486,7 +486,7 @@
   }
   .section-p1 .div1 {
     margin-top: 90px;
-    margin-left: 260px;
+    margin-left: 360px;
   }
 
   .div1 h2 {
@@ -497,12 +497,12 @@
 
   .div1 p {
     font-size: 20px;
-    width: 65%;
+    width: 50%;
   }
 
   .section-p1 .div2 {
     margin-left: 90px;
-    margin-left: 260px;
+    margin-left: 360px;
   }
 
   .social-container li a {
@@ -544,13 +544,81 @@
   .multi h3 {
     width: 60%;
     line-height: 50px;
+    padding-right: 10px;
   }
 
   .frame {
-    justify-content: flex-start;
+    justify-content: space-evenly;
   }
 
-  .frame p, .frame img {
-    padding-left: 10px;
+  .section-p3 {
+    flex-direction: row;
+    height: 668px;
+    align-items: center;
+  }
+
+  .descript-social {
+    width: 30%;
+    margin-bottom: 100px;
+  }
+
+  .description1 > p {
+    width: 500px;
+  }
+
+  .description2 button {
+    margin-left: 26px;
+  }
+
+  .social-container2 {
+    margin-right: 185px;
+  }
+
+  .languages {
+    width: 40%;
+    height: 500px;
+  }
+  
+  .dropdown-content {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .dropdown-content li {
+    border: none;
+    padding: 5px;
+    background: #F7F7F9;
+    margin-bottom: 30px;
+  }
+
+  .dropdown-content li img {
+    padding-right: 8px;
+  }
+
+  .contact {
+    align-items: center;
+    background-image: url("/img/contact-form-background-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+
+  .text-contain {
+    width: 30%;
+    justify-content: center;
+  }
+
+  #myform {
+    width: 100%;
+    align-items: center;
+  }
+
+  #myform input, 
+  #myform textarea{
+    width: 30%;
+  }
+
+  #myform button {
+    width: 10%;
   }
 }
