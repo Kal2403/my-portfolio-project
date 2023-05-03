@@ -414,3 +414,125 @@
     background-color: #6070ff;
   }
 }
+
+@media screen and (min-width: 768px) {
+  main {
+    background: #fff;
+  }
+
+  #header {
+    height: 90px;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .logo {
+    padding-left: 155px;
+    padding-top: 10px;
+  }
+
+  .nav {
+    --i1: scale(0);
+    --i2: scale(0);
+  }
+
+  .nav:has(.side-bar:target) {
+    --i1: scale(0);
+    --i2: scale(0);
+    --clip: inset(0 0 0 0);
+  }
+
+  .nav-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu-second {
+    display: none;
+  }
+
+  .side-bar {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    clip-path: none;
+    transition: none;
+    display: flex;
+    margin-right: 155px;
+  }
+
+  .side-bar li {
+    padding-right: 32px;
+    display: flex;
+    padding-bottom: 10px;
+  }
+
+  .side-bar li a {
+    color: rgba(52, 69, 99, 1);
+    font-size: 15px;
+  }
+
+  .side-bar li a:hover {
+    color: rgba(52, 69, 99, 0.638);
+  }
+
+  .section-p1 {
+    background-image: url('img/Header-bg1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 590px;
+  }
+  .section-p1 .div1 {
+    margin-top: 90px;
+    margin-left: 260px;
+  }
+
+  .div1 h2 {
+    font-size: 48px;
+    width: 30%;
+    line-height: 60px;
+  }
+
+  .div1 p {
+    font-size: 20px;
+    width: 65%;
+  }
+
+  .section-p1 .div2 {
+    margin-left: 90px;
+    margin-left: 260px;
+  }
+
+  .social-container li a {
+    font-size: 16px;
+  }
+
+  .card {
+    width: 1156px;
+    height: 496px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgba(223, 225, 230, 1);
+  }
+
+  .card-multi {
+    display: flex;  
+    flex-direction: row-reverse;
+  }
+
+  .card .img-project {
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+  }
+
+  .description-project h3{
+    font-size: 40px;
+  }
+}
