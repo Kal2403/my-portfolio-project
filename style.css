@@ -416,10 +416,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  main {
-    background: #fff;
-  }
-
   #header {
     height: 90px;
     width: 100%;
@@ -484,8 +480,8 @@
   .section-p1 {
     background-image: url('img/Header-bg1.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background-size: cover;
+    background-position: top center;
     height: 590px;
   }
   .section-p1 .div1 {
@@ -513,6 +509,10 @@
     font-size: 16px;
   }
 
+  .section-p2 {
+    width: 100%;
+  }
+
   .card {
     width: 1156px;
     height: 496px;
@@ -534,5 +534,23 @@
 
   .description-project h3{
     font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  .multi {
+    padding-left: 50px;
+  }
+
+  .multi h3 {
+    width: 60%;
+    line-height: 50px;
+  }
+
+  .frame {
+    justify-content: flex-start;
+  }
+
+  .frame p, .frame img {
+    padding-left: 10px;
   }
 }
