@@ -104,17 +104,18 @@
   }
 
   main {
-    background-color: #e5e5e5;
+    background-color: #f4f5f7;
   }
 
   .section-p1 {
     width: 100%;
-    height: 94vh;
+    height: 80vh;
     background-image: url("/img/header-shapes-mobile.svg");
     background-repeat: no-repeat;
     background-size: contain;
     border-bottom-left-radius: 100px;
     background-color: #fff;
+    border-bottom: 1px solid #dfe1e6;
   }
 
   .section-p1 .div1 {
@@ -127,6 +128,7 @@
     font-size: 2.8em;
     font-weight: 700;
     line-height: 50px;
+    color: #172b4d;
   }
 
   .div1 p {
@@ -151,7 +153,7 @@
   .section-p2 {
     width: 90%;
     height: 2788px;
-    padding-top: 114px;
+    padding-top: 50px;
     display: grid;
     margin: auto;
   }
@@ -247,6 +249,7 @@
     width: 168px;
     height: 48px;
     margin-top: 20px;
+    margin-left: 25px;
     border-radius: 16px;
     font-size: 17px;
     font-weight: 500;
@@ -412,5 +415,283 @@
   #myform button:hover {
     color: #fff;
     background-color: #6070ff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #header {
+    height: 60px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .logo {
+    padding-left: 180px;
+    padding-top: 10px;
+  }
+
+  .nav {
+    --i1: scale(0);
+    --i2: scale(0);
+  }
+
+  .nav:has(.side-bar:target) {
+    --i1: scale(0);
+    --i2: scale(0);
+    --clip: inset(0 0 0 0);
+  }
+
+  .nav-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu-second {
+    display: none;
+  }
+
+  .side-bar {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    clip-path: none;
+    transition: none;
+    display: flex;
+    margin-right: 200px;
+  }
+
+  .side-bar li {
+    padding-right: 32px;
+    display: flex;
+    padding-bottom: 10px;
+  }
+
+  .side-bar li a {
+    color: rgba(52, 69, 99, 1);
+    font-size: 15px;
+  }
+
+  .social-container li a {
+    font-size: 16px;
+  }
+
+  .side-bar li a:hover {
+    color: rgba(52, 69, 99, 0.638);
+  }
+
+  .section-p1 {
+    background-image: url('img/Header-bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 80vh;
+    border-bottom: 1px solid rgba(223, 225, 230, 1);
+  }
+
+  .section-p1 .div1 {
+    margin-top: 40px;
+    margin-left: 260px;
+  }
+
+  .div1 h2 {
+    font-size: 48px;
+    width: 30%;
+    line-height: 60px;
+    color: #091e42;
+  }
+
+  .div1 p {
+    font-size: 20px;
+    width: 65%;
+  }
+
+  .section-p1 .div2 {
+    margin-left: 260px;
+  }
+
+  .section-p2 {
+    width: 100%;
+  }
+
+  .card {
+    width: 1156px;
+    height: 496px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgba(223, 225, 230, 1);
+  }
+
+  .card-multi {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .tonic-img {
+    width: 100%;
+    height: 100%;
+    padding: 24px 0 24px 24px;
+  }
+
+  .tonic {
+    height: 100%;
+    padding: 48px 46px 146px 46px;
+  }
+
+  .tonic h3 {
+    width: 100%;
+    font-size: 40px;
+  }
+
+  .tonic .text-description {
+    padding: 32px 0 24px 0;
+  }
+
+  .tonic .frame {
+    width: 70%;
+    line-height: 24px;
+  }
+
+  .tonic .frame p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .card-multi .multi {
+    height: 100%;
+    padding: 48px 46px 128px 48px;
+  }
+
+  .multi-img {
+    height: 100%;
+    padding: 24px 22px 24px 0;
+  }
+
+  .multi h3 {
+    width: 100%;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .multi .frame {
+    width: 70%;
+    padding: 18px 0 28px 0;
+  }
+
+  .multi .frame p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .multi .text-description {
+    padding: 0 0 22px 0;
+  }
+
+  .multi button {
+    margin-top: 48px;
+  }
+
+  .section-p3 {
+    display: flex;
+    flex-direction: row;
+    height: 668px;
+    border-bottom: 1px solid rgba(223, 225, 230, 1);
+  }
+
+  .descript-social {
+    width: 40%;
+    height: 100%;
+    padding: 166px 0 198px 143px;
+  }
+
+  .descript-social .description1 {
+    width: 100%;
+  }
+
+  .descript-social .description1 h2 {
+    color: #091e42;
+    width: 100%;
+  }
+
+  .descript-social .description1 p {
+    width: 100%;
+  }
+
+  .descript-social .description2 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .social-container2 {
+    padding-left: 30px;
+  }
+
+  .languages {
+    width: 60%;
+    height: 100%;
+  }
+
+  .languages .name-drop {
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    padding-right: 180px;
+    padding-left: 36px;
+  }
+
+  .dropdown-content {
+    display: flex;
+  }
+
+  .dropdown-content li {
+    border: none;
+    width: 122px;
+    height: 120px;
+    background: #f7f7f9;
+    margin-right: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dropdown-content li img {
+    width: 60%;
+    margin-right: 5px;
+    padding-bottom: 15px;
+  }
+
+  .contact {
+    align-items: center;
+    background-image: url("/img/contact-form-background-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+
+  .text-contain {
+    width: 30%;
+    justify-content: center;
+  }
+
+  #myform {
+    width: 100%;
+    align-items: center;
+  }
+
+  #myform input,
+  #myform textarea {
+    width: 30%;
+  }
+
+  #myform button {
+    width: 10%;
   }
 }

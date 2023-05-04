@@ -17,13 +17,13 @@
     </div>
     <nav class="nav">
       <div class="nav-container">
-        <a href="#menu" class="nav-menu"><i class="fa-solid fa-bars nav-icon"></i></a>
-        <a href="#" class="nav-menu nav-menu-second"><i class="fa-solid fa-x nav-icon"></i></a>
         <ul class="side-bar" id="menu">
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+        <a href="#menu" class="nav-menu"><i class="fa-solid fa-bars nav-icon"></i></a>
+        <a href="#" class="nav-menu nav-menu-second"><i class="fa-solid fa-x nav-icon"></i></a>
       </div>
     </nav>
   </header>
@@ -52,7 +52,7 @@
     </section>
     <section class="section-p2" id="portfolio">
       <div class="card">
-        <img class="img-project" src="/img/Snapshoot-Portfolio1.svg" alt="">
+        <img class="img-project tonic-img" src="/img/Snapshoot-Portfolio1.svg" alt="">
         <div class="description-project tonic">
           <h3>Tonic</h3>
           <div class="frame">
@@ -74,8 +74,8 @@
           <button type="button">See project</button>
         </div>
       </div>
-      <div class="card">
-        <img class="img-project" src="/img/Snapshoot-Portfolio2.svg" alt="">
+      <div class="card card-multi">
+        <img class="img-project multi-img" src="/img/Snapshoot-Portfolio2.svg" alt="">
         <div class="description-project multi">
           <h3>Multi-Post Stories</h3>
           <div class="frame">
@@ -98,7 +98,7 @@
         </div>
       </div>
       <div class="card">
-        <img class="img-project" src="/img/Snapshoot-Portfolio3.svg" alt="">
+        <img class="img-project tonic-img" src="/img/Snapshoot-Portfolio3.svg" alt="">
         <div class="description-project tonic">
           <h3>Tonic</h3>
           <div class="frame">
@@ -120,8 +120,8 @@
           <button type="button">See project</button>
         </div>
       </div>
-      <div class="card">
-        <img class="img-project" src="/img/Snapshoot-Portfolio4.svg" alt="">
+      <div class="card card-multi">
+        <img class="img-project multi-img" src="/img/Snapshoot-Portfolio4.svg" alt="">
         <div class="description-project multi">
           <h3>Multi-Post Stories</h3>
           <div class="frame">
@@ -145,35 +145,41 @@
       </div>
     </section>
     <section class="section-p3" id="about">
-      <div class="description1">
-        <h2>About Myself</h2>
-        <p>
-          I'm a software developer! I can help you build a product , feature
-          or website Look through some of my work and experience! If you like
-          what you see and have a project you need coded, don't hesitate to
-          contact me.
-        </p>
-        <p class="connect">lest's connect</p>
-      </div>
-      <div class="description2">
-        <ul class="social-container2">
-          <li><a href="https://github.com/Kal2403"><img src="/img/github.svg"/></a></li>
-          <li><a href="https://www.linkedin.com/in/cristhian-castillo-41136322a/"><img src="/img/Linkedin.svg"/></a></li>
-          <li><a href="#"><img src="/img/thougn.svg" alt="" /></a></li>
-          <li><a href="https://twitter.com/Kal24031992"><img src="/img/Twitter.svg"/></a></li>
-          <li><a href="#"><img src="/img/M.svg" alt="" /></a></li>
-        </ul>
-        <button type="button">Get my resume</button>
+      <div class="descript-social">
+        <div class="description1">
+          <h2>About Myself</h2>
+          <p>
+            I'm a software developer! I can help you build a product , feature
+            or website Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don't hesitate to
+            contact me.
+          </p>
+          <p class="connect">lest's connect</p>
+        </div>
+        <div class="description2">
+          <ul class="social-container2">
+            <li><a href="https://github.com/Kal2403"><img src="/img/github.svg"/></a></li>
+            <li><a href="https://www.linkedin.com/in/cristhian-castillo-41136322a/"><img src="/img/Linkedin.svg"/></a></li>
+            <li><a href="#"><img src="/img/thougn.svg" alt="" /></a></li>
+            <li><a href="https://twitter.com/Kal24031992"><img src="/img/Twitter.svg"/></a></li>
+            <li><a href="#"><img src="/img/M.svg" alt="" /></a></li>
+          </ul>
+          <button type="button">Get my resume</button>
+        </div>
       </div>
       <div class="languages">
         <ul class="name-drop">
-          <li>
-            <a href="#">
+          <li class="dropdown-list">
+            <a href="#" class="dropdown-link">
               <p>Lenguages</p>
-              <img src="/img/Disabled.svg">
+              <img src="/img/Disabled2.svg" class="dropdown-check">
             </a>
           </li>
-          <img class="line" src="/img/Separator-Bottom.svg">
+          <ul class="dropdown-content">
+            <li><img src="/img/Ellipse-1.svg"><a href="">JavaScrip</a></li>
+            <li><img src="/img/Ellipse-2.svg"><a href="">HTML</a></li>
+            <li><img src="/img/Ellipse-3.svg"><a href="">CSS</a></li>
+          </ul>
           <li>
             <a href="#">
               <p>Frameworks</p>
@@ -203,7 +209,6 @@
         <textarea name="comments" type="text" id="textarea" cols="30" rows="10" maxlength="500" placeholder="Write your message here..." required></textarea>
         <button name="btn" type="submit">Get in touch</button>
       </form>
-      <img src="/img/Shape.svg">
     </section>
   </main>
 </body>
