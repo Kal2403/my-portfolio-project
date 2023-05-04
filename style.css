@@ -474,6 +474,10 @@
     font-size: 15px;
   }
 
+  .social-container li a {
+    font-size: 16px;
+  }
+
   .side-bar li a:hover {
     color: rgba(52, 69, 99, 0.638);
   }
@@ -486,6 +490,7 @@
     height: 590px;
     border-bottom: 1px solid rgba(223, 225, 230, 1);
   }
+
   .section-p1 .div1 {
     margin-top: 90px;
     margin-left: 360px;
@@ -507,10 +512,6 @@
     margin-left: 360px;
   }
 
-  .social-container li a {
-    font-size: 16px;
-  }
-
   .section-p2 {
     width: 100%;
   }
@@ -524,7 +525,7 @@
   }
 
   .card-multi {
-    display: flex;  
+    display: flex;
     flex-direction: row-reverse;
   }
 
@@ -534,7 +535,7 @@
     padding: 24px;
   }
 
-  .description-project h3{
+  .description-project h3 {
     font-size: 40px;
     padding-bottom: 20px;
   }
@@ -585,7 +586,7 @@
   .dropdown-content li {
     border: none;
     padding: 5px;
-    background: #F7F7F9;
+    background: #f7f7f9;
     margin-bottom: 30px;
   }
 
@@ -611,8 +612,8 @@
     align-items: center;
   }
 
-  #myform input, 
-  #myform textarea{
+  #myform input,
+  #myform textarea {
     width: 30%;
   }
 
