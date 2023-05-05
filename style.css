@@ -20,12 +20,13 @@
     text-decoration: none;
     color: #6070ff;
     font-size: 1em;
-    transition: all .2s;
+    transition: all 0.2s;
   }
 
   .logo a h1 {
     transition: all 3s;
   }
+
   .logo span {
     color: #000;
   }
@@ -520,11 +521,12 @@
     margin-left: 260px;
     animation: transL 5s infinite;
   }
-  
+
   @keyframes transL {
     0% {
       transform: translateX(10px);
     }
+    
     100% {
       transform: translateX(20px);
     }
