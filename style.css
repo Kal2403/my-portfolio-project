@@ -20,8 +20,12 @@
     text-decoration: none;
     color: #6070ff;
     font-size: 1em;
+    transition: all .2s;
   }
 
+  .logo a h1 {
+    transition: all 3s;
+  }
   .logo span {
     color: #000;
   }
