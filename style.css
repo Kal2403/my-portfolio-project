@@ -20,6 +20,11 @@
     text-decoration: none;
     color: #6070ff;
     font-size: 1em;
+    transition: all 0.2s;
+  }
+
+  .logo a h1 {
+    transition: all 3s;
   }
 
   .logo span {
@@ -503,15 +508,28 @@
     width: 30%;
     line-height: 60px;
     color: #091e42;
+    animation: transL 5s infinite;
   }
 
   .div1 p {
     font-size: 20px;
     width: 65%;
+    animation: transL 5s infinite;
   }
 
   .section-p1 .div2 {
     margin-left: 260px;
+    animation: transL 5s infinite;
+  }
+
+  @keyframes transL {
+    0% {
+      transform: translateX(10px);
+    }
+
+    100% {
+      transform: translateX(20px);
+    }
   }
 
   .section-p2 {
