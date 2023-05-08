@@ -58,6 +58,12 @@ Added linters.yml
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://google.com)
+
 ## 💻 Getting Started <a name="getting-started"></a>
 To get a local copy up and running, follow these steps.
 
@@ -121,7 +127,7 @@ Once you have opened the `index.html` file in your browser, you should see My-Po
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Kal2403/my-portfolio-project/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
