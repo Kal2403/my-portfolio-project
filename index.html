@@ -15,16 +15,21 @@
         <h1><span>K</span>-Kal</h1>
       </a>
     </div>
+    <button id="open" class="open-menu" ><i class="fa-solid fa-bars"></i></button>
     <nav class="nav">
-      <div class="nav-container">
-        <ul class="side-bar" id="menu">
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <a href="#menu" class="nav-menu"><i class="fa-solid fa-bars nav-icon"></i></a>
-        <a href="#" class="nav-menu nav-menu-second"><i class="fa-solid fa-x nav-icon"></i></a>
-      </div>
+      <button class="close-menu btn-close"><i class="fa-solid fa-x"></i></button>
+      <ul class="side-bar">
+        <li class="nav-item"><a class="nav-link btn-close" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link btn-close" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link btn-close" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="navigation">
+      <ul class="list-ul">
+        <li class="li-item"><a class="li-link" href="#portfolio">Portfolio</a></li>
+        <li class="li-item"><a class="li-link" href="#about">About</a></li>
+        <li class="li-item"><a class="li-link" href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
   <main>
@@ -196,7 +201,7 @@
         </ul>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="text-contain">
         <h2>Contact me</h1>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
@@ -210,5 +215,7 @@
       </form>
     </section>
   </main>
+  
+  <script src="script.js"></script>
 </body>
 </html>
