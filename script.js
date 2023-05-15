@@ -6,8 +6,8 @@ open.addEventListener('click', () => {
   nav.classList.add('visible');
 });
 
-close.forEach(element => {
+close.forEach((element) => {
   element.addEventListener('click', () => {
     nav.classList.remove('visible');
-  })
+  });
 });
