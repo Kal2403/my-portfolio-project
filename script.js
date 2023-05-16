@@ -11,3 +11,38 @@ close.forEach((element) => {
     nav.classList.remove('visible');
   });
 });
+const projectData = [
+  {
+    name: "",
+    description: "",
+    image: "",
+    tecnologies: "",
+    liveLink: "",
+    sourceLink: ""
+  },
+  {
+    name: "",
+    description: "",
+    image: "",
+    tecnologies: "",
+    liveLink: "",
+    sourceLink: ""
+  },
+  {
+    name: "",
+    description: "",
+    image: "",
+    tecnologies: "",
+    liveLink: "",
+    sourceLink: ""
+  },
+  {
+    name: "",
+    description: "",
+    image: "",
+    tecnologies: "",
+    liveLink: "",
+    sourceLink: ""
+  },
+
+]
