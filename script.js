@@ -13,61 +13,60 @@ close.forEach((element) => {
 });
 const projectData = [
   {
-    name: "Tonic",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "img/Snapshoot-Portfolio1.svg",
-    tecnologies: ["HTML", "CSS", "JavaScript"],
-    liveLink: "",
-    sourceLink: ""
+    name: 'Tonic',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'img/Snapshoot-Portfolio1.svg',
+    tecnologies: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: '',
+    sourceLink: ''
   },
 
   {
-    name: "Multi-Post",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "img/Snapshoot-Portfolio2.svg",
-    tecnologies: ["HTML", "CSS", "JavaScript"],
-    liveLink: "",
-    sourceLink: ""
+    name: 'Multi-Post',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'img/Snapshoot-Portfolio2.svg',
+    tecnologies: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: '',
+    sourceLink: ''
   },
 
   {
-    name: "Tonic",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "img/Snapshoot-Portfolio3.svg",
-    tecnologies: ["HTML", "CSS", "JavaScript"],
-    liveLink: "",
-    sourceLink: ""
+    name: 'Tonic',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'img/Snapshoot-Portfolio3.svg',
+    tecnologies: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: '',
+    sourceLink: ''
   },
 
   {
-    name: "Multi-Post",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "img/Snapshoot-Portfolio4.svg",
-    tecnologies: ["HTML", "CSS", "JavaScript"],
-    liveLink: "",
-    sourceLink: ""
-  }
-]
+    name: 'Multi-Post',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'img/Snapshoot-Portfolio4.svg',
+    tecnologies: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: '',
+    sourceLink: '',
+  },
+];
 
 const projectSection = document.querySelector('#portfolio');
-for(let i = 0; i < projectData.length; i++) {
+for (let i = 0; i < projectData.length; i+=1) {
   const project = projectData[i];
 
   const projectElement = document.createElement('div');
   projectElement.classList.add('card');
-  if(i % 2 !== 0) {
+  if (i % 2 !== 0) {
     projectElement.classList.add('card-multi');
   }
 
-  const imgElement = document.createElement('img')
-  imgElement.classList.add("img-project");
-  
+  const imgElement = document.createElement('img');
+  imgElement.classList.add('img-project');
   imgElement.src = project.image;
   imgElement.alt = project.name;
-  if(i % 2 == 0) {
-    imgElement.classList.add("tonic-img");
+  if (i % 2 === 0) {
+    imgElement.classList.add('tonic-img');
   } else {
-    imgElement.classList.add("multi-img");
+    imgElement.classList.add('multi-img');
   }
   projectElement.appendChild(imgElement);
 
@@ -105,7 +104,7 @@ for(let i = 0; i < projectData.length; i++) {
   frame.appendChild(year);
 
   const pElement = document.createElement('p');
-  pElement.classList.add('text-description')
+  pElement.classList.add('text-description');
   pElement.textContent = project.description;
   descriptionProject.appendChild(pElement);
 
@@ -114,20 +113,21 @@ for(let i = 0; i < projectData.length; i++) {
 
   const liElementHtml = document.createElement('li');
   const aElementHtml = document.createElement('a');
-  aElementHtml.href = "https://developer.mozilla.org/en-US/docs/Web/HTML"
-  aElementHtml.textContent = project.tecnologies[0];
+  aElementHtml.href = 'https://developer.mozilla.org/en-US/docs/Web/HTML';
+  let [html, css, javascript] = project.tecnologies;
+  aElementHtml.textContent = html;
   liElementHtml.appendChild(aElementHtml);
 
   const liElementCss = document.createElement('li');
   const aElementCss = document.createElement('a');
-  aElementCss.href = "https://developer.mozilla.org/en-US/docs/Web/CSS"
-  aElementCss.textContent = project.tecnologies[1];
+  aElementCss.href = 'https://developer.mozilla.org/en-US/docs/Web/CSS';
+  aElementCss.textContent = css;
   liElementCss.appendChild(aElementCss);
 
   const liElementJavaScript = document.createElement('li');
   const aElementJavaScript = document.createElement('a');
-  aElementJavaScript.href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-  aElementJavaScript.textContent = project.tecnologies[2];
+  aElementJavaScript.href = 'https://developer.mozilla.org/en-US/docs/Web/JavaScript';
+  aElementJavaScript.textContent = javascript;
   liElementJavaScript.appendChild(aElementJavaScript);
 
   ulElement.appendChild(liElementHtml);
@@ -149,12 +149,11 @@ const popup = document.querySelector('.popup');
 const popupTitle = document.querySelector('#popup-title');
 const popupImage = document.querySelector('#popup-image');
 const popupDescription = document.querySelector('#popup-description');
-const popupTechnologies = document.querySelector('#popup-technologies');
-let popupLiveLink = document.querySelector('#popup-live-link');
-let popupSourceLink = document.querySelector('#popup-source-link');
+let popupLiveLink = document.querySelector('#popup-live');
+let popupSourceLink = document.querySelector('#popup-source');
 const popupClose = document.querySelector('.close');
 
-document.querySelectorAll('.details').forEach(button => {
+document.querySelectorAll('.details').forEach((button) => {
   button.addEventListener('click', () => {
     const projectId = button.dataset.project.substring(7);
     const project = projectData[projectId - 1];
@@ -169,4 +168,4 @@ document.querySelectorAll('.details').forEach(button => {
 
 popupClose.addEventListener('click', () => {
   popup.style.display = 'none';
-})
+});
