@@ -17,8 +17,8 @@ const projectData = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: 'img/Snapshoot-Portfolio1.svg',
     tecnologies: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: '',
-    sourceLink: ''
+    liveLink: 'https://github.com/Kal2403/my-portfolio-project',
+    sourceLink: 'https://github.com/Kal2403/my-portfolio-project',
   },
 
   {
@@ -26,8 +26,8 @@ const projectData = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: 'img/Snapshoot-Portfolio2.svg',
     tecnologies: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: '',
-    sourceLink: ''
+    liveLink: 'https://github.com/Kal2403/my-portfolio-project',
+    sourceLink: 'https://github.com/Kal2403/my-portfolio-project',
   },
 
   {
@@ -35,8 +35,8 @@ const projectData = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: 'img/Snapshoot-Portfolio3.svg',
     tecnologies: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: '',
-    sourceLink: ''
+    liveLink: 'https://github.com/Kal2403/my-portfolio-project',
+    sourceLink: 'https://github.com/Kal2403/my-portfolio-project',
   },
 
   {
@@ -44,13 +44,13 @@ const projectData = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: 'img/Snapshoot-Portfolio4.svg',
     tecnologies: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: '',
-    sourceLink: '',
+    liveLink: 'https://github.com/Kal2403/my-portfolio-project',
+    sourceLink: 'https://github.com/Kal2403/my-portfolio-project',
   },
 ];
 
 const projectSection = document.querySelector('#portfolio');
-for (let i = 0; i < projectData.length; i+=1) {
+for (let i = 0; i < projectData.length; i += 1) {
   const project = projectData[i];
 
   const projectElement = document.createElement('div');
@@ -109,12 +109,12 @@ for (let i = 0; i < projectData.length; i+=1) {
   descriptionProject.appendChild(pElement);
 
   const ulElement = document.createElement('ul');
-  ulElement.classList.add("list-technologys");
+  ulElement.classList.add('list-technologys');
 
   const liElementHtml = document.createElement('li');
   const aElementHtml = document.createElement('a');
   aElementHtml.href = 'https://developer.mozilla.org/en-US/docs/Web/HTML';
-  let [html, css, javascript] = project.tecnologies;
+  const [html, css, javascript] = project.tecnologies;
   aElementHtml.textContent = html;
   liElementHtml.appendChild(aElementHtml);
 
