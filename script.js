@@ -165,3 +165,11 @@ document.querySelectorAll('.details').forEach((button) => {
 popupClose.addEventListener('click', () => {
   popup.style.display = 'none';
 });
+function validatioForm() {
+  let email = document.getElementById("email").value;
+  let lowerEmail = email.toLowerCase();
+
+  if (email === lowerEmail) {
+    return true;
+  }
+}
