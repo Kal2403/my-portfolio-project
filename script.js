@@ -165,3 +165,38 @@ document.querySelectorAll('.details').forEach((button) => {
 popupClose.addEventListener('click', () => {
   popup.style.display = 'none';
 });
+
+const nameInput = document.querySelector('#name');
+nameInput.name = 'name';
+nameInput.type = 'text';
+nameInput.maxlength = '30';
+nameInput.placeholder = 'Name';
+
+const emailInput = document.querySelector('#email');
+emailInput.name = 'email';
+emailInput.type = 'email';
+emailInput.placeholder = 'Email';
+
+const textTarea = document.querySelector('#textarea');
+textTarea.name = 'comments';
+textTarea.type = 'text';
+textTarea.cols = '30';
+textTarea.rows = '10';
+textTarea.maxlength = '500';
+textTarea.placeholder = 'Write your message here...';
+
+function validatioForm() {
+  const email = document.getElementById('email').value;
+  const lowerEmail = email.toLowerCase();
+
+  if (email === lowerEmail) {
+    return true;
+  }
+  const errorElement = document.getElementById('error-message');
+  errorElement.innerText = 'Please enter the email in lowercase.';
+  errorElement.style.display = 'block';
+  errorElement.style.color = '#ff4c4c';
+  return false;
+}
+
+validatioForm();
