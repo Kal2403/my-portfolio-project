@@ -192,11 +192,11 @@ function validatioForm() {
   if (email === lowerEmail) {
     return true;
   }
-    const errorElement = document.getElementById('error-message');
-    errorElement.innerText = 'Please enter the email in lowercase.';
-    errorElement.style.display = 'block';
-    errorElement.style.color = '#ff4c4c';
-    return false;
+  const errorElement = document.getElementById('error-message');
+  errorElement.innerText = 'Please enter the email in lowercase.';
+  errorElement.style.display = 'block';
+  errorElement.style.color = '#ff4c4c';
+  return false;
 }
 
 validatioForm();
