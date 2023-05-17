@@ -183,19 +183,20 @@ textTarea.type = 'text';
 textTarea.cols = '30';
 textTarea.rows = '10';
 textTarea.maxlength = '500';
-textTarea.placeholder = 'Write your message here...'
+textTarea.placeholder = 'Write your message here...';
 
 function validatioForm() {
-  let email = document.getElementById('email').value;
-  let lowerEmail = email.toLowerCase();
+  const email = document.getElementById('email').value;
+  const lowerEmail = email.toLowerCase();
 
   if (email === lowerEmail) {
     return true;
-  } else {
+  }
     const errorElement = document.getElementById('error-message');
     errorElement.innerText = 'Please enter the email in lowercase.';
     errorElement.style.display = 'block';
     errorElement.style.color = '#ff4c4c';
     return false;
-  }
 }
+
+validatioForm();
