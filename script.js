@@ -17,8 +17,8 @@ const projectData = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: 'img/Snapshoot-Portfolio1.svg',
     tecnologies: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: 'https://github.com/Kal2403/my-portfolio-project',
-    sourceLink: 'https://github.com/Kal2403/my-portfolio-project',
+    liveLink: '',
+    sourceLink: '',
   },
 
   {
@@ -26,8 +26,8 @@ const projectData = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: 'img/Snapshoot-Portfolio2.svg',
     tecnologies: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: 'https://github.com/Kal2403/my-portfolio-project',
-    sourceLink: 'https://github.com/Kal2403/my-portfolio-project',
+    liveLink: '',
+    sourceLink: '',
   },
 
   {
@@ -35,8 +35,8 @@ const projectData = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: 'img/Snapshoot-Portfolio3.svg',
     tecnologies: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: 'https://github.com/Kal2403/my-portfolio-project',
-    sourceLink: 'https://github.com/Kal2403/my-portfolio-project',
+    liveLink: '',
+    sourceLink: '',
   },
 
   {
@@ -44,8 +44,8 @@ const projectData = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: 'img/Snapshoot-Portfolio4.svg',
     tecnologies: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: 'https://github.com/Kal2403/my-portfolio-project',
-    sourceLink: 'https://github.com/Kal2403/my-portfolio-project',
+    liveLink: '',
+    sourceLink: '',
   },
 ];
 
@@ -149,8 +149,6 @@ const popup = document.querySelector('.popup');
 const popupTitle = document.querySelector('#popup-title');
 const popupImage = document.querySelector('#popup-image');
 const popupDescription = document.querySelector('#popup-description');
-let popupLiveLink = document.querySelector('#popup-live');
-let popupSourceLink = document.querySelector('#popup-source');
 const popupClose = document.querySelector('.close');
 
 document.querySelectorAll('.details').forEach((button) => {
