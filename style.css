@@ -218,9 +218,9 @@
     color: #7a869a;
   }
 
-  .description-project .text-description {
+  .text-description {
     padding-top: 15px;
-    margin-bottom: 5px;
+    margin-bottom:5px;
   }
 
   .list-technologys {
@@ -242,7 +242,7 @@
     background-color: #ebebff;
   }
 
-  .description-project button {
+  .details {
     width: 126px;
     height: 48px;
     margin-top: 20px;
@@ -269,12 +269,12 @@
     right: 30px;
   }
 
-  .description-project button:hover {
+  .details:hover {
     background-color: #6070ff;
     color: #fff;
   }
 
-  .description-project button:active {
+  .details:active {
     background-color: #2230d2;
     color: #fff;
   }
@@ -285,6 +285,115 @@
 
   .multi h3 {
     line-height: 33px;
+  }
+
+  .popup {
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .close {
+    float: right;
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #67798e;
+    margin-right: 5px;
+  }
+
+  .content {
+    position: relative;
+    width: 80%;
+    height: 85%;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .popup-frame {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    font-size: 13px;
+    font-weight: 600;
+    padding-top: 5px;
+  }
+
+  .popup-frame p:nth-child(3) {
+    color: #7a869a;
+  }
+
+  .popup-frame p:nth-child(5) {
+    color: #7a869a;
+  }
+
+  #popup-image {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  #popup-description {
+    font-size: 13px;
+  }
+  
+  #popup-technologies {
+    margin-top: 5px;
+  }
+
+  .buttons-container {
+    margin-top: 38px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #popup-live {
+    border: 1px solid #6070ff;
+    padding: 8px 25px 12px 25px;
+    height: 45px;
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: rgba(57, 109, 242, 1);
+    font-weight: 500;
+    align-self: center;
+    cursor: pointer;
+  }
+
+  .icon-live {
+    width: 28%;
+    position: relative;
+    left: 8px;
+    top: 4px;
+    color: rgba(57, 109, 242, 1);
+  }
+
+  #popup-source {
+    border: 1px solid #6070ff;
+    padding: 10px 15px 12px 15px;
+    height: 45px;
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: rgba(57, 109, 242, 1);
+    font-weight: 500;
+    align-self: center;
+    cursor: pointer;
+  }
+
+  .icon-source {
+    position: relative;
+    left: 5px;
+    font-size: 20px;
+    color: rgba(57, 109, 242, 1);
   }
 
   .section-p3 {
@@ -595,6 +704,60 @@
 
   .multi button {
     margin-top: 48px;
+  }
+
+  .content {
+    width: 40%;
+    height: 735px;
+  }
+
+  .close {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  #popup-title {
+    font-size: 40px;
+  }
+
+  .popup-frame {
+    width: 45%;
+  }
+
+  #popup-image {
+    width: 100%;
+  }
+
+  .popup-container-description {
+    display: flex;
+  }
+
+  #popup-description {
+    margin-top: 20px;
+  }
+
+  .subcontainer-description {
+    margin-top: 14px;
+    margin-left: 10px;
+  }
+
+  #popup-live {
+    padding: 10px;
+    padding-top: 7px;
+  }
+
+  #popup-live:hover {
+    background: rgba(96, 112, 255, 1);
+    color: #fff;
+  }
+
+  #popup-source {
+    padding: 10px;
+  }
+
+  #popup-source:hover {
+    background: rgba(96, 112, 255, 1);
+    color: #fff;
   }
 
   .section-p3 {
