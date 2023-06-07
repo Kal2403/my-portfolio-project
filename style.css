@@ -18,6 +18,20 @@
     align-items: center;
   }
 
+  .logo {
+    position: relative;
+    animation: bounce 1s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      top: 0;
+    }
+    50% {
+      top: -20px;
+    }
+  }
+
   .logo a {
     text-decoration: none;
     color: #6070ff;
@@ -27,12 +41,12 @@
   .logo span {
     color: #000;
   }
-
-  .side-bar li {
+  
+  li {
     list-style: none;
   }
-
-  .side-bar li a {
+  
+  a {
     text-decoration: none;
   }
 
@@ -116,50 +130,54 @@
     background-color: #f4f5f7;
   }
 
-  .section-p1 {
-    width: 100%;
-    height: 90vh;
-    background-image: url("/img/header-shapes-mobile.svg");
+  #home{
+    background-image: url('img/header-shapes-mobile.svg');
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: rgba(255, 255, 255, 1);
     border-bottom-left-radius: 100px;
-    background-color: #fff;
-    border-bottom: 1px solid #dfe1e6;
   }
 
-  .section-p1 .div1 {
+  .home__container {
     width: 90%;
-    margin: auto;
-    padding-top: 120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 145px 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
   }
 
-  .div1 h2 {
-    font-size: 2.8em;
-    font-weight: 700;
-    line-height: 50px;
-    color: #172b4d;
+  .home__container.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .home__heading {
+    font-size: 40px;
+    line-height: 52px;
+    width: 95%;
   }
 
-  .div1 p {
-    padding-top: 10px;
+  .home___descripttion {
     font-size: 16px;
-    margin: 1px;
+    width: 95%;
   }
 
-  .connect {
+  .home__connect {
+    font-size: 16px;
+    line-height: 24px;
     text-transform: uppercase;
-    color: #7f8cff;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    font-weight: 500;
+    color: rgba(127, 140, 255, 1);
   }
 
-  .section-p1 .div2 {
-    width: 90%;
-    margin: auto;
+  .home__social-container {
+    display: flex;
+    gap: 15px;
   }
 
-  .section-p2 {
+  #portfolio {
     width: 90%;
     height: 2788px;
     padding-top: 50px;
@@ -176,6 +194,14 @@
     display: flex;
     flex-direction: column;
     margin: auto;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .card.show {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .card .img-project {
@@ -396,7 +422,7 @@
     color: rgba(57, 109, 242, 1);
   }
 
-  .section-p3 {
+  #about {
     width: 100%;
     height: 1062px;
     background: #fff;
@@ -462,7 +488,7 @@
     color: #000;
   }
 
-  .contact {
+  #contact {
     width: 100%;
     height: 779px;
     background-color: #6070ff;
@@ -581,50 +607,37 @@
     color: rgba(52, 69, 99, 0.8);
   }
 
-  .section-p1 {
-    background-image: url('img/Header-bg1.png');
+  #home{
+    background-image: url("/img/Header-bg1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
-    height: 80vh;
-    border-bottom: 1px solid rgba(223, 225, 230, 1);
   }
 
-  .section-p1 .div1 {
-    margin-top: 40px;
-    margin-left: 260px;
+  .home__container {
+    width: 60%;
+    margin: 0 260px;
+    padding-top: 200px;
   }
-
-  .div1 h2 {
+  
+  .home__heading {
     font-size: 48px;
-    width: 30%;
+    font-weight: 700;
     line-height: 60px;
-    color: #091e42;
-    animation: transL 5s infinite;
+    letter-spacing: 0.37px;
+    width: 60%;
   }
-
-  .div1 p {
+  
+  .home___descripttion {
     font-size: 20px;
-    width: 65%;
-    animation: transL 5s infinite;
+    font-weight: 400;
+    line-height: 28px;
   }
 
-  .section-p1 .div2 {
-    margin-left: 260px;
-    animation: transL 5s infinite;
+  .home__social-container {
+    gap: 20px;
   }
 
-  @keyframes transL {
-    0% {
-      transform: translateX(10px);
-    }
-
-    100% {
-      transform: translateX(20px);
-    }
-  }
-
-  .section-p2 {
+  #portfolio {
     width: 100%;
   }
 
@@ -760,7 +773,7 @@
     color: #fff;
   }
 
-  .section-p3 {
+  #about {
     display: flex;
     flex-direction: row;
     height: 668px;
@@ -832,7 +845,7 @@
     padding-bottom: 15px;
   }
 
-  .contact {
+  #contact {
     align-items: center;
     background-image: url("/img/contact-form-background-desktop.png");
     background-repeat: no-repeat;

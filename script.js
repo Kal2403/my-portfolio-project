@@ -11,6 +11,12 @@ close.forEach((element) => {
     nav.classList.remove('visible');
   });
 });
+
+window.addEventListener('DOMContentLoaded', function() {
+  const content = document.querySelector('.home__container');
+  content.classList.add('show');
+})
+
 const projectData = [
   {
     name: 'Tonic',
@@ -144,6 +150,23 @@ for (let i = 0; i < projectData.length; i += 1) {
 
   projectSection.appendChild(projectElement);
 }
+
+window.addEventListener('DOMContentLoaded', function() {
+  const cards = document.querySelectorAll('.card');
+
+  function checkShow() {
+    for(let i = 0; i < cards.length; i += 1) {
+      let position = cards[i].getBoundingClientRect().top;
+      let highScreen = window.innerHeight;
+
+      if (position < highScreen - 50) {
+        cards[i].classList.add('show');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', checkShow);
+})
 
 const popup = document.querySelector('.popup');
 const popupTitle = document.querySelector('#popup-title');
